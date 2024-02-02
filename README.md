@@ -9,13 +9,13 @@ Personel Documentation of SpringBoot
 <br />
 @RequestMapping, 
 <br />
-@GetMapping, 
+@GetMapping,  //getting-retrieving the data with url GET
 <br />
-@PostMapping, 
+@PostMapping,   //creating new data POST 
 <br />
-@PutMapping, 
+@PutMapping, 		//updating the data PUT
 <br />
-@DeleteMapping
+@DeleteMapping		//deleting the data DELETE
 <br />
 For pom.xml version setting problems after initiliazing the project:
 <br />
