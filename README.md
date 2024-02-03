@@ -29,4 +29,5 @@ spring-boot:run
 
 <br /> todo: add mapping explanations or ex.
 <br /> find related repos.
+<br /> mysql connection will be done
 
