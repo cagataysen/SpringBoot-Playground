@@ -23,19 +23,19 @@ From the Preferences in IntelliJ, navigate to "Build, Execution, Deployment > Bu
 Then "File > Invalidate Caches / Restart" to reload Intelli J. The error will go away automatically.
 
 <br />
-# Controller Layers:
+<strong>  Controller Layers: </strong>
 <br />
 Bir uygulamanın web tabanlı kısmını yöneten ve HTTP isteklerine cevap veren bir katmandır. Bu katman, gelen HTTP isteklerini alır, işler, uygun servis katmanlarına yönlendirir ve sonunda HTTP cevaplarını oluşturur. Spring Boot'taki controller'lar genellikle MVC (Model-View-Controller) tasarım desenine uyarlar.
 <br />
-# @Controller veya @RestController: 
+<strong>  @Controller veya @RestController:  </strong>
 <br />
 Bu anotasyonlar, sınıfın bir controller olduğunu belirtir. @Controller genel olarak HTML sayfaları gibi görüntüler üretirken, @RestController JSON veya XML gibi veri formatlarını üretmek üzere tasarlanmıştır.
 <br />
-# @RequestMapping: 
+<strong>  @RequestMapping: </strong>
 <br />
 Bu anotasyon, bir HTTP isteğinin hangi metodun çalıştırılacağını belirtir. İsteğin tipi (GET, POST, PUT, DELETE vb.) ve isteğin geldiği URL yolu bu anotasyon ile belirlenir.
 <br />
-# Path Variables: 
+<strong>  Path Variables: </strong>
 Yol değişkenleri, URL'deki değişken değerleri almak için kullanılır.
 
 ```java
