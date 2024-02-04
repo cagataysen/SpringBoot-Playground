@@ -23,11 +23,27 @@ From the Preferences in IntelliJ, navigate to "Build, Execution, Deployment > Bu
 Then "File > Invalidate Caches / Restart" to reload Intelli J. The error will go away automatically.
 
 <br />
-Run Debug Configuration in IntelliJ (and Spring Boot): maven project created and command-line added: 
+**Controller Layers:**
 <br />
-spring-boot:run 
+bir uygulamanın web tabanlı kısmını yöneten ve HTTP isteklerine cevap veren bir katmandır. Bu katman, gelen HTTP isteklerini alır, işler, uygun servis katmanlarına yönlendirir ve sonunda HTTP cevaplarını oluşturur. Spring Boot'taki controller'lar genellikle MVC (Model-View-Controller) tasarım desenine uyarlar.
+<br />
+**@Controller** veya **@RestController:** Bu anotasyonlar, sınıfın bir controller olduğunu belirtir. @Controller genel olarak HTML sayfaları gibi görüntüler üretirken, @RestController JSON veya XML gibi veri formatlarını üretmek üzere tasarlanmıştır.
+<br />
+**@RequestMapping:** Bu anotasyon, bir HTTP isteğinin hangi metodun çalıştırılacağını belirtir. İsteğin tipi (GET, POST, PUT, DELETE vb.) ve isteğin geldiği URL yolu bu anotasyon ile belirlenir.
+<br />
+**Path Variables:** Yol değişkenleri, URL'deki değişken değerleri almak için kullanılır.
 
-<br /> todo: add mapping explanations or ex.
-<br /> find related repos.
-<br /> mysql connection will be done
+```java
+@RestController
+public class SampleController {
+
+    @RequestMapping("/mesaj")
+    public String alMesaj(@RequestParam String metin) {
+        return "Alınan Mesaj: " + metin;
+    }
+}
+
+```
+
+
 
