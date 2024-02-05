@@ -49,6 +49,6 @@ public class SampleController {
 }
 
 ```
-
+<strong> mySql has connected </strong>
 
 
