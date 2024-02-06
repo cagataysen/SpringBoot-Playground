@@ -49,6 +49,15 @@ public class SampleController {
 }
 
 ```
-<strong> mySql has connected </strong>
+<strong> mySql has connected with the dependency of </strong>
+
+```xml
+<dependency>
+    <groupId>com.mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <scope>runtime</scope>
+</dependency>
+```
+
 
 
