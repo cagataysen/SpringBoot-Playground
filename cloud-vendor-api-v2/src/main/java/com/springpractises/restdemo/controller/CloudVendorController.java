@@ -17,19 +17,19 @@ public class CloudVendorController {
         this.cloudVendorService = cloudVendorService;
     }
 
-    @GetMapping({"vendorId"})
+    @GetMapping("vendorId")
     public CloudVendor getCloudVendorDetails(@PathVariable("vendorId") String vendorId) throws Exception {
         return cloudVendorService.getCloudVendor(vendorId);
     }
 
     // Read All Cloud Vendor Details from DB
-    @GetMapping("/")
+    @GetMapping()
     public List<CloudVendor> getAllCloudVendorDetails()
     {
         return cloudVendorService.getAllCloudVendors();
     }
 
-    @PostMapping("/")
+    @PostMapping()
     public String createCloudVendorDetails(@RequestBody CloudVendor cloudVendor)
     {
         cloudVendorService.createCloudVendor(cloudVendor);
