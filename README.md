@@ -58,6 +58,25 @@ public class SampleController {
     <scope>runtime</scope>
 </dependency>
 ```
+<br />
+<br />
+<strong>@Entity annotasyonu: <strong> <br />
+Veritabanı tablolarını temsil eden Java sınıflarını işaretlemek için kullanılır. @Entity annotasyonu, sınıfın bir JPA (Java Persistence API) varlığı olduğunu belirtir.<br />
 
+```java
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class User {
+    @Id
+    private Long id;
+    private String username;
+    private String email;
+    
+    // Getter ve setter metodları
+}
+```
+User sınıfı @Entity annotasyonuyla işaretlenmiş ve bir JPA varlığı olarak belirtilmiştir. Bu sınıf, bir veritabanı tablosunu temsil eder. @Id annotasyonu, id alanının birincil anahtar (primary key) olduğunu belirtir. Diğer alanlar (username ve email) da sırasıyla veritabanı tablosundaki sütunları temsil eder.
 
 
