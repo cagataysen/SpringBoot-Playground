@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/cloud_vendor?useSSL=false
     username: root
-    password: Olusha31!
+    password: Sanofi-synthelabo!
 
   #JPA Settings
   jpa.hibernate.ddl_auto: create
