@@ -37,6 +37,9 @@ Bu anotasyon, bir HTTP isteğinin hangi metodun çalıştırılacağını belirt
 <br />
 <strong>  Path Variables: </strong>
 Yol değişkenleri, URL'deki değişken değerleri almak için kullanılır.
+<br />
+Path Variables example: /mesaj is a path variable and its gonna be on the url:
+<br />
 
 ```java
 @RestController
@@ -79,7 +82,7 @@ public class User {
 ```
 User sınıfı @Entity annotasyonuyla işaretlenmiş ve bir JPA varlığı olarak belirtilmiştir. Bu sınıf, bir veritabanı tablosunu temsil eder. @Id annotasyonu, id alanının birincil anahtar (primary key) olduğunu belirtir. Diğer alanlar (username ve email) da sırasıyla veritabanı tablosundaki sütunları temsil eder.
 <br />
-
+<br />
 <br />
 
 
