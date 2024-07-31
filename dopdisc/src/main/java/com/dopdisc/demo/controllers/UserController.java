@@ -2,41 +2,45 @@ package com.dopdisc.demo.controllers;
 
 import com.dopdisc.demo.entities.User;
 import com.dopdisc.demo.repositories.UserRepository;
+import com.dopdisc.demo.services.UserService;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/users")
 public class UserController {
 
-    UserRepository userRepository;
+    UserService userService;
 
-    public UserController (UserRepository userRepository) {
-        this.userRepository = userRepository;
+    public UserController (UserService userService) {
+        this.userService = userService;
     }
 
-    @GetMapping("/id")
-    @ResponseBody
-    public String getUser(@PathVariable long id){
-        return "User received" + id;
+    @GetMapping
+    public List<User> getAllUsers(){
+        return userService.getAllUsers();
+    }
+
+    @GetMapping("{userId}")
+    public User getOneUserById(Long userId){
+        return userService.getOneUserById(userId);
     }
 
     @PostMapping
-    @ResponseBody
     public User createUser(@RequestBody User newUser){
-        return  userRepository.save(newUser);
+        return  userService.saveOneUser(newUser);
     }
 
-    @PutMapping
-    @ResponseBody
-    public String updateUser(@PathVariable int id, @RequestBody User user){
-        return "User updated: " + user.getName();
+    @PutMapping("/{userId}")
+    public User updateOneUser(@PathVariable Long userId, @RequestBody User newUser){
+        return userService.updateOneUser(userId, newUser);
     }
 
-    @DeleteMapping("/{id}")
-    @ResponseBody
-    public String deleteUser(@PathVariable int id) {
-        // Logic to delete user with the given ID
-        return "User deleted: " + id;
+    @DeleteMapping("/{userId}")
+    public void deleteUser(@PathVariable Long userId) {
+        userService.deleteById(userId);
     }
 
 }
