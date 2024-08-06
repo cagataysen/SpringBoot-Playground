@@ -3,7 +3,6 @@ package com.dopdisc.demo.entities;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Generated;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
@@ -11,10 +10,11 @@ import java.util.Date;
 
 @Entity
 @Data
-@Table(name = "comments")
-public class Comments {
+@Table(name = "comment")
+public class Comment {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)

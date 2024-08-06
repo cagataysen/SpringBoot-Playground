@@ -1,2 +1,8 @@
-package com.dopdisc.demo.requests;public class CommentUpdateRequest {
+package com.dopdisc.demo.requests;
+
+import lombok.Data;
+
+@Data
+public class CommentUpdateRequest {
+    String text;
 }
