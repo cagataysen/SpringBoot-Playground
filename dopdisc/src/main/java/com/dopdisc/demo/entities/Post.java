@@ -17,6 +17,7 @@ public class Post {
     Long id;
 
 
+    /**/
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="user_id", nullable = false)
     @OnDelete(action= OnDeleteAction.CASCADE)
