@@ -40,7 +40,7 @@ public class EmployeeController {
 
     @GetMapping("/{search}")
     public ResponseEntity<List<Employee>> getEmployee(@PathVariable String search) {
-        List<Employee> employees = employeeRepository.getByCustomQuery(search);
+        List<Employee> employees = employeeRepository.findByNameLikeOrSurnameLike(search, search);
         return ResponseEntity.ok(employees);
     }
 

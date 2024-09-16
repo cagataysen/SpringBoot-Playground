@@ -6,11 +6,14 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.ListIterator;
 
 @Repository
 public interface EmployeeRepository extends ElasticsearchRepository<Employee, String> {
 
     @Query("{\"bool\": {\"must\": [{\"match\": {\"name\": \"?0\"}}]}}")
     List<Employee> getByCustomQuery(String search);
+
+    List<Employee> findByNameLikeOrSurnameLike(String name, String surname);
 
 }
