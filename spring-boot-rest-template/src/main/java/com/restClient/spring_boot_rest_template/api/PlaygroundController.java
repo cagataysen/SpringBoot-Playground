@@ -2,6 +2,8 @@ package com.restClient.spring_boot_rest_template.api;
 
 import com.restClient.spring_boot_rest_template.model.EmployeeDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -19,7 +21,7 @@ public class PlaygroundController {
     private static final String webUrl = "http://localhost:8080/playground";
 
     @PostMapping
-    private EmployeeDto createEmployee (@RequestBody EmployeeDto employee){
+    private ResponseEntity<EmployeeDto> createEmployee (@RequestBody EmployeeDto employee){
         employee.setId(1L);
 
         List<String> adresses = new ArrayList<>();
@@ -35,25 +37,25 @@ public class PlaygroundController {
         }
         catch (Exception e){
             System.out.println(e.getMessage());
-            return null;
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
 
-        return employee;
+        return ResponseEntity.ok(employee);
 
     }
 
     @GetMapping("/{id}")
-    private EmployeeDto checkEmployee(@PathVariable Long id){
+    private ResponseEntity<EmployeeDto> checkEmployee(@PathVariable Long id){
 
         try {
 
             String url = webUrl + "/" + id;
-            return restTemplate.getForObject(webUrl, EmployeeDto.class);
+            return ResponseEntity.ok(restTemplate.getForObject(webUrl, EmployeeDto.class));
 
         }
         catch (Exception e){
             System.out.println(e.getMessage());
-            return null;
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
         }
     }
 
