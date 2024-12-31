@@ -1,59 +1,34 @@
 package com.account_service.entity;
 
-public class Account {
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+import org.springframework.data.cassandra.core.mapping.Column;
+import org.springframework.data.cassandra.core.mapping.PrimaryKey;
+import org.springframework.data.cassandra.core.mapping.Table;
 
-    private String id;
+import java.io.Serializable;
+import java.util.Date;
+import java.util.UUID;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(of = {"id"})
+@ToString
+@Table(value = "accounts")
+public class Account implements Serializable {
+
+    @PrimaryKey
+    private String id = UUID.randomUUID().toString();
+    @Column(value = "uname")
     private String username;
+    @Column(value = "email")
     private String email;
+    @Column(value = "pwd")
     private String passwd;
-
-
-
-    public Account(String id, String username, String email, String passwd) {
-        this.id = id;
-        this.username = username;
-        this.email = email;
-        this.passwd = passwd;
-    }
-
-    public Account() {
-    }
-
-    public Account(String id) {
-        this.id = id;
-    }
-
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPasswd() {
-        return passwd;
-    }
-
-    public void setPasswd(String passwd) {
-        this.passwd = passwd;
-    }
-
+    @Column(value = "created_at")
+    private Date createdAt;
+    @Column(value = "is_active")
+    private Boolean active;
 }
