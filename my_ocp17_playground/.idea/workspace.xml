@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e6154d1-9fc6-42ad-ab4b-beced18ce6f9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../spring-security-pg03/src/main/java/com/example/demo/config/security/filters/CustomAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-security-pg03/src/main/java/com/example/demo/controller/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pokemon-review-springboot" beforeDir="false" afterPath="$PROJECT_DIR$/../pokemon-review-springboot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-pg02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg02/src/main/java/com/example/demo/config/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg02/src/main/java/com/example/demo/controllers/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-pg02/src/main/java/com/example/demo/controllers/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg02/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-pg02/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg03/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-pg03/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg03/src/main/java/com/example/demo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-pg03/src/main/java/com/example/demo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg03/src/main/java/com/example/demo/controllers/DemoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg03/src/main/java/com/example/demo/entities/Authority.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg03/src/main/java/com/example/demo/entities/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg03/src/main/java/com/example/demo/repositories/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg03/src/main/java/com/example/demo/security/SecurityAuthority.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg03/src/main/java/com/example/demo/security/SecurityUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg03/src/main/java/com/example/demo/services/JpaUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-security-pg03/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-security-pg03/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2tWtiPXycG2vGvODDN2bxaET98K" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TextBlocks.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.TextBlocks">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.cagataysen.Main" />
+      <module name="my_ocp17_playground" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.cagataysen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextBlocks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.cagataysen.chapter1.TextBlocks" />
+      <module name="my_ocp17_playground" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.cagataysen.chapter1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TextBlocks" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e6154d1-9fc6-42ad-ab4b-beced18ce6f9" name="Changes" comment="" />
+      <created>1740479786346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740479786346</updated>
+    </task>
+    <servers />
+  </component>
+</project>
